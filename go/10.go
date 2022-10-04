@@ -49,7 +49,7 @@ package main
 
 //leetcode submit region begin(Prohibit modification and deletion)
 func isMatch(s string, p string) bool {
-
+	return false
 }
 
 //leetcode submit region end(Prohibit modification and deletion)
