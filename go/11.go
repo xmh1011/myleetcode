@@ -38,6 +38,7 @@ package main
 //
 // Related Topics 贪心 数组 双指针 👍 3815 👎 0
 
+// 双指针问题 很多算法都涉及
 //leetcode submit region begin(Prohibit modification and deletion)
 func maxArea(height []int) int {
 	len := len(height)
