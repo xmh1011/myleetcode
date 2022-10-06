@@ -32,11 +32,23 @@ package main
 //
 //
 // Related Topics 双指针 字符串 字符串匹配 👍 1612 👎 0
-
+//执行用时：4 ms, 在所有 Go 提交中击败了100.00%的用户
+//内存消耗：1.8 MB, 在所有 Go 提交中击败了94.70%的用户
+// 一遍过，牛逼！
 //leetcode submit region begin(Prohibit modification and deletion)
 func strStr(haystack string, needle string) int {
-
+	len1 := len(haystack)
+	len2 := len(needle)
+	for i := 0; i < len1-len2+1; i++ {
+		if haystack[i] == needle[0] {
+			if i < len1-len2 && haystack[i:i+len2] == needle {
+				return i
+			} else if i == len1-len2 && haystack[i:] == needle {
+				return i
+			}
+		}
+	}
+	return -1
 }
 
 //leetcode submit region end(Prohibit modification and deletion)
-
