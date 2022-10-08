@@ -92,6 +92,7 @@ func solveSudoku(board [][]byte) {
 }
 
 // TODO:不会 抄答案的
+// 现在应该是懂了
 func solveSudoku_leetcode(board [][]byte) {
 	var line, column [9][9]bool
 	var block [3][3][9]bool
