@@ -82,12 +82,12 @@ func combinationSum2_leetcode(candidates []int, target int) (ans [][]int) {
 	return
 }
 
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
+//func min(a, b int) int {
+//	if a < b {
+//		return a
+//	}
+//	return b
+//}
 
 func combinationSum2(candidates []int, target int) [][]int {
 	var trcak []int
