@@ -35,8 +35,32 @@ package main
 
 //leetcode submit region begin(Prohibit modification and deletion)
 func trap(height []int) int {
-
+	sum := 0
+	max := getMax(height) //找到最大的高度，以便遍历。
+	for i := 1; i <= max; i++ {
+		isStart := false //标记是否开始更新 temp
+		temp_sum := 0
+		for j := 0; j < len(height); j++ {
+			if isStart && height[j] < i {
+				temp_sum++
+			}
+			if height[j] >= i {
+				sum = sum + temp_sum
+				temp_sum = 0
+				isStart = true
+			}
+		}
+	}
+	return sum
+}
+func getMax(height []int) int {
+	max := 0
+	for i := 0; i < len(height); i++ {
+		if height[i] > max {
+			max = height[i]
+		}
+	}
+	return max
 }
 
 //leetcode submit region end(Prohibit modification and deletion)
-
