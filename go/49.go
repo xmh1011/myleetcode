@@ -38,9 +38,33 @@ package main
 // Related Topics 数组 哈希表 字符串 排序 👍 1308 👎 0
 
 //leetcode submit region begin(Prohibit modification and deletion)
-func groupAnagrams(strs []string) [][]string {
+func groupAnagrams(strs []string) int {
+	Table := []row{}
+	var row = getNewRow()
+
+	//拉取模型伪代码
+	var sum = 0
+	var rowIndex = 0
+	// Aggregation
+	for rowIndex < RowSize {
+		// Filter
+		for rowIndex < RowSize {
+			row = Table[rowIndex]
+			rowIndex++
+			if row.teacher == "Tom" {
+				break
+			}
+		}
+		sum += row.record
+	}
+	return sum
 
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+//var sum = 0
+//var raw_index = 0
+//for row_index < RowSize {
+//
+//}
 
+//leetcode submit region end(Prohibit modification and deletion)
