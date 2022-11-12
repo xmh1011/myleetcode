@@ -1,5 +1,9 @@
 package main
 
+import (
+	"sort"
+)
+
 //给你一个字符串数组，请你将 字母异位词 组合在一起。可以按任意顺序返回结果列表。
 //
 // 字母异位词 是由重新排列源单词的字母得到的一个新单词，所有源单词中的字母通常恰好只用一次。
@@ -38,27 +42,19 @@ package main
 // Related Topics 数组 哈希表 字符串 排序 👍 1308 👎 0
 
 //leetcode submit region begin(Prohibit modification and deletion)
-func groupAnagrams(strs []string) int {
-	Table := []row{}
-	var row = getNewRow()
-
-	//拉取模型伪代码
-	var sum = 0
-	var rowIndex = 0
-	// Aggregation
-	for rowIndex < RowSize {
-		// Filter
-		for rowIndex < RowSize {
-			row = Table[rowIndex]
-			rowIndex++
-			if row.teacher == "Tom" {
-				break
-			}
-		}
-		sum += row.record
+func groupAnagrams(strs []string) [][]string {
+	mp := map[string][]string{}
+	for _, str := range strs {
+		s := []byte(str)
+		sort.Slice(s, func(i, j int) bool { return s[i] < s[j] })
+		sortedStr := string(s)
+		mp[sortedStr] = append(mp[sortedStr], str)
 	}
-	return sum
-
+	ans := make([][]string, 0, len(mp))
+	for _, v := range mp {
+		ans = append(ans, v)
+	}
+	return ans
 }
 
 //var sum = 0

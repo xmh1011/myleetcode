@@ -520,6 +520,39 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/var/folders/w_/4l7k3gwn3g581ztmz26mzdc00000gn/T/leetcode/editor/cn/[51]N 皇后.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/w_/4l7k3gwn3g581ztmz26mzdc00000gn/T/leetcode/editor/cn/doc/content/[51]N 皇后.md" />
+              <option name="frontendQuestionId" value="leetcode.cn51" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/var/folders/w_/4l7k3gwn3g581ztmz26mzdc00000gn/T/leetcode/editor/cn/[51]N 皇后.go" />
+              <option name="titleSlug" value="n-queens" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/w_/4l7k3gwn3g581ztmz26mzdc00000gn/T/leetcode/editor/cn/[52]N皇后 II.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/w_/4l7k3gwn3g581ztmz26mzdc00000gn/T/leetcode/editor/cn/doc/content/[52]N皇后 II.md" />
+              <option name="frontendQuestionId" value="leetcode.cn52" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/var/folders/w_/4l7k3gwn3g581ztmz26mzdc00000gn/T/leetcode/editor/cn/[52]N皇后 II.go" />
+              <option name="titleSlug" value="n-queens-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/w_/4l7k3gwn3g581ztmz26mzdc00000gn/T/leetcode/editor/cn/[53]最大子数组和.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/var/folders/w_/4l7k3gwn3g581ztmz26mzdc00000gn/T/leetcode/editor/cn/doc/content/[53]最大子数组和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn53" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/var/folders/w_/4l7k3gwn3g581ztmz26mzdc00000gn/T/leetcode/editor/cn/[53]最大子数组和.go" />
+              <option name="titleSlug" value="maximum-subarray" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/var/folders/w_/4l7k3gwn3g581ztmz26mzdc00000gn/T/leetcode/editor/cn/[5]最长回文子串.go">
           <value>
             <LeetcodeEditor>
