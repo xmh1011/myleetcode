@@ -60,33 +60,3 @@ func main() {
 }
 
 var RowSize = 100
-
-type row struct {
-	teacher string
-	record  int
-}
-
-func getNewRow() row {
-	return row{teacher: "", record: 0}
-}
-
-//leetcode submit region begin(Prohibit modification and deletion)
-func groupAnagrams(strs []string) int {
-	Table := []row{}
-	var row = getNewRow()
-
-	//推送模型伪代码
-	var sum = 0
-	var rowIndex = 0
-	// Filter
-	for rowIndex < RowSize {
-		row = Table[rowIndex]
-		rowIndex++
-		if row.teacher == "Tom" {
-			// Aggregation
-			sum += row.record
-		}
-	}
-	return sum
-
-}
