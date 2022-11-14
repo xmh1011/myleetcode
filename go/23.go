@@ -58,7 +58,73 @@ package main
 
 // TODO: implement
 func mergeKLists(lists []*ListNode) *ListNode {
-
+	nums := len(lists)
+	var ans *ListNode
+	if nums == 0 {
+		return nil
+	} else if nums == 1 {
+		return lists[0]
+	} else {
+		for i := 1; i < nums; i++ {
+			ans = mergeLists(lists[0], lists[i])
+			lists[0] = ans
+		}
+		return ans
+	}
 }
+
+func mergeLists(list1 *ListNode, list2 *ListNode) *ListNode {
+	if list1 == nil {
+		return list2
+	} else if list2 == nil {
+		return list1
+	} else if list1.Val < list2.Val {
+		list1.Next = mergeLists(list1.Next, list2)
+		return list1
+	} else {
+		list2.Next = mergeLists(list1, list2.Next)
+		return list2
+	}
+}
+
+// 下面为leetcode解法
+//func mergeKLists(lists []*ListNode) *ListNode {
+//	return merge(lists, 0, len(lists)-1)
+//}
+//
+//func merge(lists []*ListNode, l, r int) *ListNode{
+//	if l == r {
+//		return lists[l]
+//	}
+//	if l > r {
+//		return nil
+//	}
+//	mid := (l + r) / 2
+//	return mergeTwoLists(merge(lists, l , mid), merge(lists, mid + 1, r))
+//}
+//
+//func mergeTwoLists(a, b *ListNode)*ListNode{
+//	if a == nil && b == nil{
+//		return nil
+//	}
+//	var head = &ListNode{}
+//	dummy := head
+//	for a != nil && b != nil{
+//		if a.Val < b.Val{
+//			head.Next = a
+//			a = a.Next
+//		}else{
+//			head.Next = b
+//			b = b.Next
+//		}
+//		head = head.Next
+//	}
+//	if a != nil{
+//		head.Next = a
+//	}else if b != nil{
+//		head.Next = b
+//	}
+//	return dummy.Next
+//}
 
 //leetcode submit region end(Prohibit modification and deletion)
