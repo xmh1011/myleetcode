@@ -48,14 +48,18 @@ func NewListNode(i int) *ListNode {
 }
 
 func main() {
+	fmt.Println(getFactorial(23+12-2) / (getFactorial(23-1) * getFactorial(12-1)))
+	fmt.Println(getFactorial(23 + 12 - 2))
+	fmt.Println(getFactorial(22))
+	fmt.Println(getFactorial(12 - 1))
 
-	l := *NewListNode(0)
-	for i := 1; i < 11; i++ {
-		l = *NewListNode(i)
-	}
-	l = *reverseKGroup(&l, 2)
-	for l.Next != nil {
-		fmt.Println(l.Val)
+}
+
+func getFactorial(n int) int {
+	if n == 0 {
+		return 1
+	} else {
+		return n * getFactorial(n-1)
 	}
 }
 
