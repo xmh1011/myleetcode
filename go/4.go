@@ -69,10 +69,10 @@ func getKthElement(nums1, nums2 []int, k int) int {
 		newIndex2 := min(index2+half, len(nums2)) - 1
 		pivot1, pivot2 := nums1[newIndex1], nums2[newIndex2]
 		if pivot1 <= pivot2 {
-			k -= (newIndex1 - index1 + 1)
+			k -= newIndex1 - index1 + 1
 			index1 = newIndex1 + 1
 		} else {
-			k -= (newIndex2 - index2 + 1)
+			k -= newIndex2 - index2 + 1
 			index2 = newIndex2 + 1
 		}
 	}

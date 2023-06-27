@@ -55,3 +55,37 @@ func twoSum(nums []int, target int) []int {
 	}
 	return nil
 }
+
+//// write a quick sort function
+//func quickSort(nums []int) []int {
+//	if len(nums) <= 1 {
+//		return nums
+//	}
+//	pivot := nums[0]
+//	var left, right []int
+//	for _, x := range nums[1:] {
+//		if x < pivot {
+//			left = append(left, x)
+//		} else {
+//			right = append(right, x)
+//		}
+//	}
+//	return append(append(quickSort(left), pivot), quickSort(right)...)
+//}
+//
+//// hash sort function
+//func hashSort(nums []int) []int {
+//	hashmap := map[int]int{}
+//	for _, x := range nums {
+//		hashmap[x]++
+//	}
+//	var res []int
+//	for i := 0; i < 10000; i++ {
+//		if hashmap[i] > 0 {
+//			for j := 0; j < hashmap[i]; j++ {
+//				res = append(res, i)
+//			}
+//		}
+//	}
+//	return res
+//}
