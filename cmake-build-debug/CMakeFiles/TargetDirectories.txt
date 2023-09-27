@@ -1,3 +1,0 @@
-/Users/xiaominghao/code/myleetcode/cmake-build-debug/CMakeFiles/myleetcode.dir
-/Users/xiaominghao/code/myleetcode/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/xiaominghao/code/myleetcode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
