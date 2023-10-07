@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file_path="/Users/xiaominghao/code/myleetcode/README.md"
+file_path="/Users/xiaominghao/code/myleetcode"
 
 readme_path="$file_path/README.md"
 
