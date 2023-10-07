@@ -4,6 +4,8 @@ file_path="/Users/xiaominghao/code/myleetcode"
 
 readme_path="$file_path/README.md"
 
+echo $readme_path
+
 log_path="$file_path/log.txt"
 
 now=$(date +"%Y-%m-%d %H:%M:%S")
