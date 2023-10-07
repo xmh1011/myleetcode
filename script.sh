@@ -12,7 +12,7 @@ date=$(date +"%Y-%m-%d")
 
 line_number=$(($(wc -l < "$readme_path") - 4))
 
-title="- 🗓 Updated by at: "
+title="- 🗓 Updated by at:"
 
 new_content="$title$now"
 
