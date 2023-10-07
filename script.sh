@@ -16,9 +16,7 @@ title="- 🗓 Updated by [script](./script.sh) at: "
 
 new_content="$title$now"
 
-sed -i '' "${line_number}s/.*/$new_content/" "$readme_path"
-
-echo "sed -i '' "${line_number}s/.*/$new_content/" "$readme_path""
+sed -i '' "${line_number}s/.*/$new_content/" "$file_path"
 
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 
